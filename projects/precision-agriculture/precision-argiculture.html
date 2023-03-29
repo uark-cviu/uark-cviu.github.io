@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+  <title></title>
+</head>
+<style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<body>
+  <h1 style="color:steelblue;" align="center">AI-based Smart System for Insect Monitoring</h1>
+
+  <div align="center">
+    <div style="font-size:20px;">
+      CVIU Lab, Department of Computer Science and Computer Engineering
+      <br>
+      Department of Entomology and Plant Pathology
+      <br>
+      University of Arkansas
+    </div>
+    <!-- Contacts: 
+    <br> -->
+    <a href="https://cviu.uark.edu/">https://cviu.uark.edu/</a>
+    <br>
+    Email: khoaluu@uark.edu, adowling@uark.edu
+  </div>
+  <br>
+  <img src="imgs/system_overview.png" alt="Insect Monitoring System">
+
+  <h2 style="color:steelblue;">Introduction</h2>
+
+  <div align="justify">
+    Insect-related disasters are one of the most important factors affecting crop yield due to the fast reproduction and
+    widely distributed,
+    large variety of insects. In the agricultural revolution, detecting and recognizing insects plays an important role
+    in
+    the ability for
+    crops to grow healthily and produce a high-quality yield. To achieve this, insect recognition helps to differentiate
+    between bugs that
+    must be targeted for pest control and bugs that are essential for protecting farms. While the kinds of insects are
+    broad and available
+    insect datasets have been collected from different sources, the existing insect recognition models trained on a
+    specific dataset with particular,
+    predefined insects. Thus, the previous approaches on insect recognition are unable to recognize new types of insects
+    from other datasets as well
+    as utilize the knowledge from different datasets. Machine learning, especially deep learning requires a large volume
+    of data to achieve high performance
+    hence transferring and utilizing knowledge from various datasets are essential. Therefore, we propose a new deep
+    learning-based domain adaptation
+    algorithm to address these problems. By minimizing the gap of
+    distributions between different datasets, our proposed method can generalize well on the new target domains. In
+    addition, we design a hardware system so that we
+    deploy our deep learning model the complete system to run in real-world farms.
+    <div>
+      <br>
+      <br>
+      <div align="center">
+
+        <iframe width="1136" height="639" src="https://www.youtube.com/embed/fwIAGTgrixs"
+          title="Short Takes: Caught on Camera: Insects Edition" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+
+      </div>
+      <br>
+      <br>
+
+      <h2 style="color:steelblue;">Our Solution</h2>
+      We introduce a completed hardware design for insect monitoring.
+      In particular, we propose a novel, end-to-end hardware that integrates a set of cameras, a motion detection
+      sensor,
+      a low-cost computer, and lighting modules to a unit system to capture and classify flying insects.
+      The system consists of two cameras that capture the top view and lateral view of insects. The motion sensor is
+      integrated to detect the
+      existence of the insects based on their movement into the imaging zone. Then, the sensor sends a signal to the
+      cameras to initiate image capture.
+      The system is designed to deploy in various conditions in which the environmental lighting is not ideal for taking
+      images (e.g., monitoring fields at night).
+      Hence, the LEDs are integrated to support and improve the quality of taken images. The cameras and LEDs have been
+      carefully timed by our hardware trigger
+      design to guarantee that the cameras take images at the same time as the LED flashes so that the taken images have
+      the best quality of brightness.
+      Finally, the taken images are sent immediately to the low-cost computer for further processing. Particularly, the
+      computer takes the images taken
+      from the two cameras and performs the AI algorithm to detect and classify the types of insects. The AI algorithm
+      has been developed
+      by our team by using the domain adaptation technique to train the AI model in an unsupervised manner.
+      Specifically, we develop the unsupervised domain adaptation technique to train the deep convolutional neural
+      network on the insect photos collected on the farms.
+      Also, the computational cost of the AI algorithm has been optimized so that we can effectively deploy on the
+      low-cost computer.
+      In addition, to attract the insects coming into the system, the described hardware and AI system will be attached
+      to an existing trap system that utilizes light
+      and semiochemicals to attract insects. To be able to deploy on the farm where the electric power is limited, the
+      power of the entire system is provided by solar energy.
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <img center="align" src="imgs/detected_insects.png" width=1000px">
+
+      <h2 style="color:steelblue;">Our Team</h2>
+      <table align="center">
+        <tr align="center">
+          <td align="center">
+            <img src="./imgs/khoaluu.jpg" width=224px height="350px">
+          </td>
+          <td align="center">
+            <img src="./imgs/adowling.jpg" width=224px height="350px">
+          </td>
+          <td align="center">
+            <img src="./imgs/DatTruong.png" width=224px height="350px">
+          </td>
+          <td align="center">
+            <img src="./imgs/Helton.png" width=224px height="350px">
+          </td>
+        </tr>
+        <tr align="center">
+          <td align="center"><a href="http://csce.uark.edu/~khoaluu/">Dr. Khoa Luu</a></td>
+          <td align="center"><a href="https://adowling.hosted.uark.edu/">Dr. Ashley Dowling</a></td>
+          <td align="center"><a href="https://truongthanhdat.github.io/">Thanh Dat Truong</a></td>
+          <td align="center"><a href="https://cviu.uark.edu/">Pierce Helton</a></td>
+        </tr>
+        <tr align="center">
+          <td align="center">Assistant Professor</td>
+          <td align="center">Professor</td>
+          <td align="center">Ph.D. Candidate</td>
+          <td align="center">Honors Student</td>
+        </tr>
+        <tr align="center">
+          <td align="center">khoaluu@uark.edu</td>
+          <td align="center">adowling@uark.edu</td>
+          <td align="center">tt032@uark.edu</td>
+          <td align="center">pchelton@uark.edu</td>
+        </tr>
+      </table>
+
+
+      <h2 style="color:steelblue;">Publication</h2>
+
+      <h3 style="color:steelblue;">Patents</h2>
+        [1] <em>
+          Thanh-Dat Truong, Ashley PG Dowling, Randy J. Sasaka, and Khoa Luu.
+          <b>Sensor-based Smart Insect Monitoring System in the Wild.</b>
+          University of Arkansas Invention Disclosure, 2022.</em>
+
+        <br>
+        <br>
+
+        [2] <em>
+          Thanh-Dat Truong, Ashley PG Dowling, and Khoa Luu.
+          <b>Smart Insect Control Device via Artificial Intelligence in Realtime Environment.</b>
+          University of Arkansas Invention Disclosure, 2022.
+        </em>
+        <br>
+        <br>
+        <h3 style="color:steelblue;">Papers</h2>
+          [1] <em>Thanh-Dat Truong, Chi Nhanh Duong, Pierce Helton, Ashley Dowling, Xin Li, and Khoa Luu.
+            <b>CoMaL: Conditional Maximum Likelihood Approach to Self-supervised Domain Adaptation in Long-tail Semantic
+              Segmentation.</b></em>
+          IEEE Transactions on Pattern Analysis and Machine Intelligence (Under Review).
+          <br>
+          <br>
+
+          [2] <em>Thanh-Dat Truong, Ngan Le, Bhiksha Raj, Jackson Cothren, and Khoa Luu (2023). <b>FREDOM: Fairness
+              Domain Adaptation
+              Approach to Semantic Scene Understanding.</b> In Proceedings of the IEEE/CVF Conference on Computer Vision
+            and Pattern
+            Recognition (CVPR), 2023. </em>
+
+          <br>
+          <br>
+
+          [3] <em>
+            Pierce Helton, Ashley Dowling, and Khoa Luu.
+            <b>Artificial Intelligence System for Automatic Imaging, Quantification, and Identification of Arthropods in
+              Leaf Litter and Pitfall Samples.</b>
+            Inquiry Journal, 2022.
+          </em>
+
+          <br>
+          <br>
+
+          [4] <em>
+            Thanh-Dat Truong, Naga Venkata Sai Raviteja Chappa, Xuan Bac Nguyen, Ngan Le, Ashley Dowling, and Khoa Luu.
+            <b>OTAdapt: Optimal Transport-based Approach For Unsupervised Domain Adaptation.</b>
+            In Proceedings of International Conference on Pattern Recognition (ICPR), 2022.
+          </em>
+
+          <br>
+          <br>
+
+          [5] <em>Thanh-Dat Truong, Chi Nhan Duong, Ngan Le, Son Lam Phung, Chase Rainwater, and Khoa Luu.
+            <b>BiMaL: Bijective Maximum Likelihood Approach to Domain Adaptation in Semantic Scene Segmentation.</b>
+            In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2021.
+          </em>
+
+          <br>
+          <br>
+
+          [6] <em>Jalata, Ibsa, Naga Venkata Sai Raviteja Chappa, Thanh-Dat Truong, Pierce Helton, Chase Rainwater, and
+            Khoa Luu.
+            <b>"EQAdap: Equipollent Domain Adaptation Approach to Image Deblurring."</b> IEEE Access 10 (2022):
+            93203-93211.</em>
+
+
+
+
+
+</body>
+
+</html>
