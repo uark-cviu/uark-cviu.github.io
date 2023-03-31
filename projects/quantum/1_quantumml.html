@@ -65,15 +65,103 @@
             Email: khoaluu@uark.edu
          </div>
 
-         <br>
+         <!-- <br>
          <p class="lead"><i>Our overarching mission is to accelerate two-dimensional materials research for quantum
                technologies in the US. </i>
-         </p>
+         </p> -->
       </div>
    </header>
 
 
-   <section id="Introduction" class="">
+   <section id="qnn" class="">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-10 mx-auto">
+               <h2 class="section-title-tc">
+                  Quantum Machine Learning
+               </h2>
+
+               <h3 class="section-title-tc">
+                  1. Quantum Neural Networks
+               </h3>
+
+               <p class="lead text-justify">
+                  Classical neural network algorithms are computationally
+                  expensive. For example, in image classification, representing an image pixel by
+                  pixel using classical information requires an enormous amount of computational
+                  memory resources. Hence, exploring methods to represent images in a different
+                  paradigm of information is important. We proposed a parameter encoding scheme for defining and
+                  training neural networks in quantum information based on time evolution
+                  of quantum spaces.
+                  <br> <br>
+
+                  Differentiating between a classical neural network and a variational
+                  quantum circuit
+               <div class="text-center">
+                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/qnn_2.png"></p>
+               </div>
+               <br> <br>
+
+               <p class="lead text-justify">
+                  Schematic of the Variational Quantum circuit used. Every layer is defined as a series of rotation
+                  gates
+                  in the x and y directions. Every qubit is linked to one other using CNOT gates.
+               </p>
+
+
+               <div class="text-center">
+                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/qnn_1.png"></p>
+               </div>
+               </p>
+
+
+               <h3 class="section-title-tc">
+                  2. Unsupervised Clustering by Quantum Machine
+               </h3>
+
+               <p class="lead text-justify">
+                  Clustering problems are computationally expensive, especially for large datasets. In addition, it
+                  requires a significant amount of computational resource and time to solve in the typical computer.
+                  Meanwhile, quantum computing can perform calculations exponentially faster than classical computer.
+                  Also, it is suitable for solving complex optimization and searching problems. By this reason, quantum
+                  computing comes in as a potential solution to accelerate clustering algorithms and improve their
+                  performance.
+                  <br>
+
+                  By this reasons, we prose a novel unsupervised clustering framework ultilizing quantum computer. In
+                  particular, we formuate cluster as an optimization problem and then leverage quantum computer for
+                  speedup clustering process.
+
+                  <br><br>
+               <div class="text-center">
+                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/quantum_clustering_1.png">
+                  </p>
+               </div>
+
+
+               <h3 class="section-title-tc">
+                  3. Solving Transportation and Logistics Problems with Quantum
+               </h3>
+
+               <p class="lead text-justify">
+                  The Vehicle Routing Problem (VPR) is to find the best routs for a fleet of vehicles to start from and
+                  return to a depot supplying the demand of all customers by visiting them once. The objective of this
+                  problem is to minimize the total cost of travel with the contraint of vehicles capacity.
+
+                  <br><br>
+               <div class="text-center">
+                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/quantum_vpr.png">
+                  </p>
+               </div>
+
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- <section id="Introduction" class="">
       <div class="container">
          <div class="row">
             <div class="col-lg-10 mx-auto">
@@ -93,7 +181,7 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
 
 
    <section id="solution" class="">
@@ -105,17 +193,44 @@
                </h2>
 
                <p class="lead text-justify">
+                  In quantum machine field, detecting two-dimensional (2D) materials in Silicon chips is one of the most
+                  critical
+                  problems. It is considered as one of bottlenecks in quantum research because of time and labor
+                  consumptions spent on finding a potential flake that might be useful. This progress takes hours to
+                  finish without any warranty that detected flakes being helpful. In order to speedup, reduce cost
+                  and efforts of this progress, we leverage computer vision and AI to build an end-to-end system for
+                  automatically identifying potential flakes and exploring their charactersitics (e.g thickness).
+                  <br> <br>
                   We provide a flexible and generalized solution for 2D quantum crystals identification running on
                   realtime with high accuracy. The algorithm
                   is able to work with any kind of flakes (e.g hBN, Graphine, etc),
                   hardware and environmental settings. It will help to reduces time and labor consumption in research of
                   quantum technologies.
                   <br> <br>
+                  The cloud-based system overall
+
                <div class="text-center">
-                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/2d_1.jpg"></p>
+                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/cloud_system.png"></p>
                </div>
 
-               <br> <br>
+               <p class="lead text-justify">
+                  Demostration
+                  <br><br>
+
+                  <!-- <div class="text-center">
+                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/cloud_system.png"></p>
+               </div> -->
+
+
+                  <video controls>
+                     <source src="img/quantumml/CVIU_quantumml_online_demo.mov" type="video/mp4">
+                  </video>
+
+                  <!-- <div class="text-center">
+                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/2d_1.jpg"></p>
+               </div> -->
+
+                  <!-- <br> <br>
                <div class="text-center">
                   <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/2d_2.jpg"></p>
                </div>
@@ -123,45 +238,7 @@
                <br> <br>
                <div class="text-center">
                   <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/2d_3.jpg"></p>
-               </div>
-               </p>
-            </div>
-         </div>
-      </div>
-   </section>
-
-
-   <section id="qnn" class="">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-10 mx-auto">
-               <h2 class="section-title-tc">
-                  Quantum Neural Networks
-               </h2>
-
-               <p class="lead text-justify">
-                  Classical neural network algorithms are computationally
-                  expensive. For example, in image classification, representing an image pixel by
-                  pixel using classical information requires an enormous amount of computational
-                  memory resources. Hence, exploring methods to represent images in a different
-                  paradigm of information is important. We proposed a parameter encoding scheme for defining and
-                  training neural networks in quantum information based on time evolution
-                  of quantum spaces.
-                  <br> <br>
-
-                  Differentiating between a classical neural network and a variational
-                  quantum circuit
-               <div class="text-center">
-                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/qnn_2.png"></p>
-               </div>
-               <br> <br>
-
-               Schematic of the Variational Quantum circuit used. Every layer is defined as a series of rotation gates
-               in the x and y directions. Every qubit is linked to one other using CNOT gates.
-
-               <div class="text-center">
-                  <p><img class="img-fluid" alt="Realistic human bodies" src="img/quantumml/qnn_1.png"></p>
-               </div>
+               </div> -->
                </p>
             </div>
          </div>
@@ -316,20 +393,20 @@
                }
                </pre>
             </div>
-            
+
             <div class="col-lg-10 mx-auto">
                <h2 class="section-title-tc">Sponsors</h2>
                <br>
                <table align="center">
                   <tr align="center">
-                    <td align="center">
-                      <img src="img/quantumml/logo_scaled_NSF_small.png"  width="500px">
-                    </td>
-                </table>
-          
+                     <td align="center">
+                        <img src="img/quantumml/logo_scaled_NSF_small.png" width="500px">
+                     </td>
+               </table>
+
             </div>
 
-            
+
 
          </div>
       </div>
