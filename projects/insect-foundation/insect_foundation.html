@@ -1,0 +1,494 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+		font-size: 18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+
+	h1 {
+		font-weight: 300;
+	}
+
+	.disclaimerbox {
+		background-color: #eee;
+		border: 1px solid #eeeeee;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+
+	a:link,
+	a:visited {
+		color: #1367a7;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #208799;
+	}
+
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+
+	.layered-paper-big {
+		/* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+			0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+			/* The top layer shadow */
+			5px 5px 0 0px #fff,
+			/* The second layer */
+			5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+			/* The second layer shadow */
+			10px 10px 0 0px #fff,
+			/* The third layer */
+			10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+			/* The third layer shadow */
+			15px 15px 0 0px #fff,
+			/* The fourth layer */
+			15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+			/* The fourth layer shadow */
+			20px 20px 0 0px #fff,
+			/* The fifth layer */
+			20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+			/* The fifth layer shadow */
+			25px 25px 0 0px #fff,
+			/* The fifth layer */
+			25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+		/* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big {
+		/* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+			0px 0px 1px 1px rgba(0, 0, 0, 0.35);
+		/* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper {
+		/* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+			0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+			/* The top layer shadow */
+			5px 5px 0 0px #fff,
+			/* The second layer */
+			5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+			/* The second layer shadow */
+			10px 10px 0 0px #fff,
+			/* The third layer */
+			10px 10px 1px 1px rgba(0, 0, 0, 0.35);
+		/* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+
+	.vert-cent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	hr {
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+
+<head>
+	<title>Insect Foundation Dataset for Precision Agriculture</title>
+	<meta property="og:image" content="./imgs/lady_bug.jpg" />
+	<meta property="og:title" content="Insect Foundation Dataset for Precision Agriculture" />
+</head>
+
+<body>
+	<br>
+	<center>
+		<span style="font-size:42px">Insect Foundation Dataset for Precision Agriculture</span>
+
+		<table align=center width=1000px>
+			<tr>
+				<td align=center width=100px>
+					<center>
+						<span style="font-size:24px"><a href="#">Thanh-Dat Truong</a></span>
+					</center>
+				</td>
+				<td align=center width=100px>
+					<center>
+						<span style="font-size:24px"><a href="#">Jeese Ford</a></span>
+					</center>
+				</td>
+				<td align=center width=100px>
+					<center>
+						<span style="font-size:24px"><a href="#">Ashley Dowling</a></span>
+					</center>
+				</td>
+				<td align=center width=100px>
+					<center>
+						<span style="font-size:24px"><a href="#">Khoa Luu</a></span>
+					</center>
+				</td>
+		</table>
+		<!-- <span style="font-size:30px">ECCV 2016.</span> -->
+
+		<table align=center width=1000px>
+			<tr>
+				<td align=center width=500px>
+					<center>
+						<span style="font-size:24px">
+							Computer Vision and Image Understanding Lab
+							<br>
+							EECS Department
+							<br>
+							University of Arkansas
+						</span>
+					</center>
+				</td>
+				<td align=center width=450px>
+					<center>
+						<span style="font-size:24px">
+							ENPL Department
+							<br>
+							Division of Agriculture
+							<br>
+							University of Arkansas
+						</span>
+					</center>
+				</td>
+
+			</tr>
+			<tr>
+		</table>
+
+	</center>
+
+	<!--   		  <br><br>
+		  <hr> -->
+
+	<br>
+
+	<table align=center width=1100px>
+		<tr>
+			<table align=center width=800px>
+				<tr>
+					<td align=center width=800px>
+						<iframe width="800" height="450" src="https://www.youtube.com/embed/fwIAGTgrixs" frameborder="0"
+							allowfullscreen></iframe>
+					</td>
+				</tr>
+			</table>
+			<br>
+		</tr>
+	</table>
+
+	<!-- <table align=center width=850px>
+		<tr>
+			<td width=400px>
+				<center>
+					<a href="./imgs/lady_bug.jpg"><img class="rounded" src="./imgs/lady_bug.jpg"
+							height="500px"></img></href></a><br>
+				</center>
+			</td>
+		</tr>
+		<td width=400px>
+			<center>
+				<span style="font-size:14px">Image of Lady Bugs</span>
+			</center>
+		</td>
+
+	</table> -->
+
+	<br>
+	<hr>
+	
+
+
+	<table align=center width=850px>
+		<center>
+			<h1 style="color:steelblue;">Abstract</h1>
+		</center>
+		<tr>
+			<td>
+				Insect-related disasters are one of the most important factors affecting crop yield due to the fast reproduction and
+				widely distributed, large variety of insects. In the agricultural revolution, detecting and recognizing insects plays an
+				important role in the ability for crops to grow healthily and produce a high-quality yield. To achieve this, insect
+				recognition helps to differentiate between bugs that must be targeted for pest control and bugs that are essential for
+				protecting farms. Machine learning, especially deep learning requires a large volume of data to achieve high performance.
+				Therefore, we introduce a novel "Insect Foundation" dataset, a game-changing resource poised to revolutionize insect-related 
+				foundation model training. This rich and expansive dataset consists of 900,000 images with dense labels of taxonomy hierarchy
+				from the high level of taxonomy (e.g., Class, Order) to the low level of taxonomy (e.g., Genus, Species).
+				Covering a vast spectrum of insect species, our dataset offers a panoramic view of entomology, enabling foundation models to 
+				comprehend visual and semantic information about insects like never before. 
+				Our proposed dataset carries immense value, fostering breakthroughs across precision agriculture and entomology research. 
+				Insect Foundation Dataset promises to empower the next generation of insect-related AI models, bringing them closer 
+				to the ultimate goal of precision agriculture.
+			</td>
+		</tr>
+	</table>
+
+	<table align=center width=850px>
+		<center>
+			<h1 style="color:steelblue;">Download</h1>
+			<span style="font-size:24px"><a href="https://uark-my.sharepoint.com/:u:/g/personal/tt032_uark_edu/EYybmLLzPYZJvTc1PjRptekBPnvI3fhJcI_WdK1Wvyo2xg?e=A3cj9l">
+				Insect Foundation Dataset V1 (Sep 23, 2023)</a></span>
+		</center>
+		<br>
+		<tr>
+			<td width=425px>
+				<span style="font-size:20px">- Numeber of Images: 900754</span>
+					
+			</td>
+			<td width=425px>
+				<span style="font-size:20px">- Number of Species: 34212</span>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<table align=center width=850px>
+		<center>
+			<span style="font-size:24px">Taxonomy Hierarchy</span>
+		</center>
+		<br>
+		<tr>
+			<td width=200px>
+				<span style="font-size:20px">- Number of Class: 15</span>
+			</td>
+			<td width=200px>
+				<span style="font-size:20px">- Number of Order: 91</span>
+			</td>	
+			<td width=200px>
+				<span style="font-size:20px">- Number of Suborder: 54</span>
+			</td>	
+		</tr>
+		<tr>
+			<td width=200px>
+				<span style="font-size:20px">- Number of Superfamily: 209</span>
+			</td>
+			<td width=200px>
+				<span style="font-size:20px">- Number of Family: 1189</span>
+			</td>	
+			<td width=200px>
+				<span style="font-size:20px">- Number of Subfamily: 1059</span>
+			</td>	
+		</tr>
+		<tr>
+			<td width=200px>
+				<span style="font-size:20px">- Number of Tribe: 1315</span>
+			</td>
+			<td width=200px>
+				<span style="font-size:20px">- Number of Subtribe: 213</span>
+			</td>	
+			<td width=200px>
+				<span style="font-size:20px">- Number of Genus: 11127</span>
+			</td>	
+		</tr>
+	</table>
+	
+	<br><br>
+	<hr>
+
+	<table align=center width=850px>
+		<center>
+			<h1 style="color:steelblue;">Examples</h1>
+		</center>
+		<tr>
+			<td>
+				<td>
+					<img src="https://bugguide.net/images/cache/CKG/KVK/CKGKVK8KPKVQB0PQC0LKUKEQLS9QCKUQB02QO0RK2KRKO01QLS4KF0UQ30BQC0PQLS8KLSIKF0IKPKZKV0.jpg"
+						width="500px" height="300px">
+				</td>
+				<td>
+					<img src="https://bugguide.net/images/cache/RSB/QJ0/RSBQJ0VQ108K6KZKWK8KF0MKF0NQCK1QO00KPKLK10LKC0RKO00KD06QRS5KWK6QV05QD08QJ0IKJ0VQ1K8K.jpg"
+						width="500px" height="300px">
+				</td>
+			</td>
+		<tr>
+			<td>
+				<td>
+					<img src="https://bugguide.net/images/cache/NHL/R6H/NHLR6HRRXHAZZL5ZHL9Z5LZRILBZGLVZ6H3H7HOHNHHRPHVHQLPZ5LVZ8L1Z5L1ZQL4ZIHDH8HCHMHCHQLVZ.jpg"
+						width="500px" height="300px">
+				</td>
+				<td>
+					<img src="https://bugguide.net/images/cache/JQ8/0DQ/JQ80DQG0R0RQTRJK1R3KWR70FQ3KOQX0DQ70DQ3K9RG0OQZQ1RZQBR70YQ40URLQNRG0VRI0OQ80K0E0DRSQ.jpg"
+						width="500px" height="300px">
+				</td>
+			</td>
+
+		</tr>
+	
+
+		</tr>
+	</table>
+
+	<table align=center width=600px>
+		<center>
+			<h1 style="color:steelblue;">Insect Foundation Model</h1>
+		</center>
+		<br>
+		<tr>
+			<td width=200px style="font-size:24px">Architecture</td>
+			<td width=200px style="font-size:24px">Parameters</td>
+			<td width=200px style="font-size:24px">Download</td>
+		</tr>
+		<tr>
+			<td width=200px style="font-size:22px">ViT-S/8</td>
+			<td width=200px style="font-size:22px">21M</td>
+			<td width=200px style="font-size:22px">Comming Soon</td>
+		</tr>
+		<tr>
+			<td width=200px style="font-size:22px">ViT-B/16</td>
+			<td width=200px style="font-size:22px">85M</td>
+			<td width=200px style="font-size:22px">Comming Soon</td>
+		</tr>
+		<tr>
+			<td width=200px style="font-size:22px">ViT-B/8</td>
+			<td width=200px style="font-size:22px">85M</td>
+			<td width=200px style="font-size:22px">Comming Soon</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+
+	<center>
+		<h1 style="color:steelblue;">Publication</h1>
+	</center>
+
+	<center>
+		<h2 style="color:steelblue;">Patents</h2>
+	</center>
+        [1] <em>
+          Thanh-Dat Truong, Ashley PG Dowling, Randy J. Sasaka, and Khoa Luu.
+          <b>Sensor-based Smart Insect Monitoring System in the Wild.</b>
+		  US Patent, PCT/US2023/021330.</em>
+
+        <br>
+        <br>
+
+        [2] <em>
+          Thanh-Dat Truong, Ashley PG Dowling, and Khoa Luu.
+          <b>Smart Insect Control Device via Artificial Intelligence in Realtime Environment.</b>
+          US Patent, PCT/US2023/021307.
+        </em>
+        <br>
+        <br>
+
+        <center>
+		<h2 style="color:steelblue;">Papers</h2>
+		</center>
+
+          [1] <em>Thanh-Dat Truong, Chi Nhanh Duong, Pierce Helton, Ashley Dowling, Xin Li, and Khoa Luu.
+            <b>CoMaL: Conditional Maximum Likelihood Approach to Self-supervised Domain Adaptation in Long-tail Semantic
+              Segmentation.</b></em>
+          IEEE Transactions on Pattern Analysis and Machine Intelligence (Under Review).
+          <br>
+          <br>
+
+          [2] <em>Thanh-Dat Truong, Ngan Le, Bhiksha Raj, Jackson Cothren, and Khoa Luu (2023). <b>FREDOM: Fairness
+              Domain Adaptation
+              Approach to Semantic Scene Understanding.</b> In Proceedings of the IEEE/CVF Conference on Computer Vision
+            and Pattern
+            Recognition (CVPR), 2023. </em>
+
+          <br>
+          <br>
+
+          [3] <em>
+            Pierce Helton, Ashley Dowling, and Khoa Luu.
+            <b>Artificial Intelligence System for Automatic Imaging, Quantification, and Identification of Arthropods in
+              Leaf Litter and Pitfall Samples.</b>
+            Inquiry Journal, 2022.
+          </em>
+
+          <br>
+          <br>
+
+          [4] <em>
+            Thanh-Dat Truong, Naga Venkata Sai Raviteja Chappa, Xuan Bac Nguyen, Ngan Le, Ashley Dowling, and Khoa Luu.
+            <b>OTAdapt: Optimal Transport-based Approach For Unsupervised Domain Adaptation.</b>
+            In Proceedings of International Conference on Pattern Recognition (ICPR), 2022.
+          </em>
+
+          <br>
+          <br>
+
+          [5] <em>Thanh-Dat Truong, Chi Nhan Duong, Ngan Le, Son Lam Phung, Chase Rainwater, and Khoa Luu.
+            <b>BiMaL: Bijective Maximum Likelihood Approach to Domain Adaptation in Semantic Scene Segmentation.</b>
+            In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2021.
+          </em>
+
+          <br>
+          <br>
+
+          [6] <em>Jalata, Ibsa, Naga Venkata Sai Raviteja Chappa, Thanh-Dat Truong, Pierce Helton, Chase Rainwater, and
+            Khoa Luu.
+            <b>"EQAdap: Equipollent Domain Adaptation Approach to Image Deblurring."</b> IEEE Access 10 (2022):
+            93203-93211.</em>
+
+	<table align="center">
+		<center>
+			<h1 style="color:steelblue;">Sponsors</h1>
+		</center>
+		<br>
+		<tr align="center">
+		  <td align="center">
+			<img src="./imgs/nsf.png" height="350px">
+		  </td>
+		  <td align="center">
+			<img src="./imgs/dart.png" height="350px">
+		  </td>
+		  <td align="center">
+			<img src="./imgs/solarid.svg" width="350px">
+		  </td>
+		</tr>
+	</table>
+
+
+
+	<br><br>
+
+</body>
+
+</html>
