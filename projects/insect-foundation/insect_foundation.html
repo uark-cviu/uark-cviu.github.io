@@ -138,15 +138,15 @@
 <html>
 
 <head>
-	<title>Insect Foundation AI Model and Dataset for Precision Agriculture</title>
+	<title>Insect-Foundation: A Foundation Model and Large-scale 1M Dataset for Visual Insect Understanding</title>
 	<meta property="og:image" content="./imgs/lady_bug.jpg" />
-	<meta property="og:title" content="Insect Foundation AI Model and Dataset for Precision Agriculture" />
+	<meta property="og:title" content="Insect-Foundation: A Foundation Model and Large-scale 1M Dataset for Visual Insect Understanding" />
 </head>
 
 <body>
 	<br>
 	<center>
-		<span style="font-size:42px">Insect Foundation AI Model and Dataset for <br> Precision Agriculture</span>
+		<span style="font-size:42px">Insect-Foundation: A Foundation Model and <br> Large-scale 1M Dataset for Visual Insect Understanding</span>
 		<br>
 		<a href="https://uark-cviu.github.io/"><span style="font-size:26px">https://uark-cviu.github.io/</span></a>
 
@@ -154,12 +154,17 @@
 			<tr>
 				<td align=center width=200px>
 					<center>
+						<span style="font-size:24px"><a href="#">Hoang-Quan Nguyen</a></span>
+					</center>
+				</td>
+				<td align=center width=200px>
+					<center>
 						<span style="font-size:24px"><a href="#">Thanh-Dat Truong</a></span>
 					</center>
 				</td>
 				<td align=center width=200px>
 					<center>
-						<span style="font-size:24px"><a href="#">Jeese Ford</a></span>
+						<span style="font-size:24px"><a href="#">Xuan-Bac Nguyen</a></span>
 					</center>
 				</td>
 				<td align=center width=200px>
@@ -268,19 +273,24 @@
 		</center>
 		<tr>
 			<td>
-				Insect-related disasters are one of the most important factors affecting crop yield due to the fast reproduction and
-				widely distributed, large variety of insects. In the agricultural revolution, detecting and recognizing insects plays an
-				important role in the ability for crops to grow healthily and produce a high-quality yield. To achieve this, insect
-				recognition helps to differentiate between bugs that must be targeted for pest control and bugs that are essential for
-				protecting farms. Machine learning, especially deep learning requires a large volume of data to achieve high performance.
-				Therefore, we introduce a novel "Insect Foundation" dataset, a game-changing resource poised to revolutionize insect-related 
-				foundation model training. This rich and expansive dataset consists of 900,000 images with dense labels of taxonomy hierarchy
-				from the high level of taxonomy (e.g., Class, Order) to the low level of taxonomy (e.g., Genus, Species).
-				Covering a vast spectrum of insect species, our dataset offers a panoramic view of entomology, enabling foundation models to 
-				comprehend visual and semantic information about insects like never before. 
-				Our proposed dataset carries immense value, fostering breakthroughs across precision agriculture and entomology research. 
-				Insect Foundation Dataset promises to empower the next generation of insect-related AI models, bringing them closer 
-				to the ultimate goal of precision agriculture.
+				In precision agriculture, the detection and recognition
+				of insects play an essential role in the ability of crops to
+				grow healthy and produce a high-quality yield. The current machine vision model requires a large volume of data
+				to achieve high performance. However, there are approximately 5.5 million different insect species in the world.
+				None of the existing insect datasets can cover even a fraction of them due to varying geographic locations and acquisition costs. In this paper, we introduce a novel “Insect1M” dataset, a game-changing resource poised to revolutionize insect-related foundation model training. Covering
+				a vast spectrum of insect species, our dataset, including 1
+				million images with dense identification labels of taxonomy
+				hierarchy and insect descriptions, offers a panoramic view
+				of entomology, enabling foundation models to comprehend
+				visual and semantic information about insects like never
+				before. Then, to efficiently establish an Insect Foundation
+				Model, we develop a micro-feature self-supervised learning method with a Patch-wise Relevant Attention mechanism capable of discerning the subtle differences among insect images. In addition, we introduce Description Consistency loss to improve micro-feature modeling via insect
+				descriptions. Through our experiments, we illustrate the
+				effectiveness of our proposed approach in insect modeling and achieve State-of-the-Art performance on standard
+				benchmarks of insect-related tasks. Our Insect Foundation
+				Model and Dataset promise to empower the next generation
+				of insect-related vision models, bringing them closer to the
+				ultimate goal of precision agriculture.
 			</td>
 		</tr>
 	</table>
@@ -360,17 +370,12 @@
 			<td align=center width=200px style="font-size:24px">Download</td>
 		</tr>
 		<tr>
-			<td align=center width=200px style="font-size:22px">ViT-S/8</td>
+			<td align=center width=200px style="font-size:22px">ViT-S/16</td>
 			<td align=center width=200px style="font-size:22px">21M</td>
 			<td align=center width=200px style="font-size:22px">Comming Soon</td>
 		</tr>
 		<tr>
 			<td align=center width=200px style="font-size:22px">ViT-B/16</td>
-			<td align=center width=200px style="font-size:22px">85M</td>
-			<td align=center width=200px style="font-size:22px">Comming Soon</td>
-		</tr>
-		<tr>
-			<td align=center width=200px style="font-size:22px">ViT-B/8</td>
 			<td align=center width=200px style="font-size:22px">85M</td>
 			<td align=center width=200px style="font-size:22px">Comming Soon</td>
 		</tr>
@@ -397,6 +402,7 @@
 		<table align=center width=1000px>
 			<tr>
 				<td align=center> <img style="border-radius: 50%;" src="imgs/people/DatTruong.png" width=150px height="200px"> </td>
+				<td align=center> <img style="border-radius: 50%;" src="imgs/people/QuanNguyen.jpg" width=150px height="200px"> </td>
 				<td align=center> <img style="border-radius: 50%;" src="imgs/people/Drake.jpg" width=150px  height="200px"> </td>
 				<td align=center> <img style="border-radius: 50%;" src="imgs/people/adowling.jpg" width=150px  height="200px"> </td>
 				<td align=center> <img style="border-radius: 50%;" src="imgs/people/XinLi_2023.jpeg" width=150px height="200px"> </td>
@@ -405,6 +411,7 @@
 
 			<tr>
 				<td align=center> Thanh-Dat Truong </td>
+				<td align=center> Hoang-Quan Nguyen </td>
 				<td align=center> Jesse Ford </td>
 				<td align=center> Ashley Dowling </td>
 				<td align=center> Xin Li</td>
@@ -413,6 +420,7 @@
 
 			<tr>
 				<td align=center> Ph.D. Candidate </td>
+				<td align=center> Ph.D. Student </td>
 				<td align=center> Undergrad </td>
 				<td align=center> Professor </td>
 				<td align=center> Professor </td>
@@ -423,12 +431,14 @@
 				<td align=center> University of Arkansas </td>
 				<td align=center> University of Arkansas </td>
 				<td align=center> University of Arkansas </td>
+				<td align=center> University of Arkansas </td>
 				<td align=center> University at Albany </td>
 				<td align=center> University of Arkansas </td>
 			</tr>
 
 			<tr>
 				<td align=center> <a href="mailto:tt032@uark.edu">tt032@uark.edu</a> </td>
+				<td align=center> <a href="mailto:hn016@uark.edu">hn016@uark.edu</a> </td>
 				<td align=center> <a href="mailto:jdf028@uark.edu">jdf028@uark.edu</a> </td>
 				<td align=center> <a href="mailto:adowling@uark.edu">adowling@uark.edu</a> </td>
 				<td align=center> <a href="mailto:xli48@albany.edu">xli48@albany.edu</a> </td>
