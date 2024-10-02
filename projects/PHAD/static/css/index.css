@@ -1,0 +1,285 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+
+.video-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+/* Add the new styles here */
+.section.hero.is-small {
+  background-color: #f5f5f5;
+}
+
+.stats-container {
+  margin-top: 2rem;
+}
+
+.stats-box {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stats {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.0rem;
+  font-weight: 300;
+  color: #000000;
+}
+/* .image-container {
+  max-width: 1000px;
+  max-height: 1000px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  overflow:auto;
+  display:inline-block; 
+  width: 100%;
+} */
+.zoom-img {
+  padding: 50px;
+  /* background-color: green; */
+  transition: transform .2s; /* Animation */
+  width: 750px;
+  height: 300px;
+  margin-bottom: 0;
+}
+
+.no-zoom-img {
+  width: 100%;
+  height: 100%;
+  transition: none;
+  margin-bottom: 0; /* No zoom effect */
+}
+.small-zoom-img {
+  width: 100%;
+  /* height: 70%; */
+  transition: none;
+  margin-bottom: 0; /* No zoom effect */
+}
+/* .zoom-img {
+  width: 100%;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  transition: transform .2s;
+} */
+
+/* .image-container .zoom-img:hover {
+  transform: scale(1.5); 
+  /* z-index: 1; */
+/* } */ 
+
+.zoom-img:hover {
+  transform: scale(3.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* .image-container:hover {
+  overflow: visible; /* Allow the overflow to show the full image */
+/* } */
+
+
+.image-caption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+} */
+
+#references .content ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+#references .content li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2rem; /* Space for custom number */
+}
+
+#references .content li::before {
+  content: attr(data-custom-number);
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* font-weight: bold; */
+  color: #000;
+}
+
+.content a {
+  color: hsl(204, 86%, 53%); /* Blue color for links */
+  text-decoration: none; /* Optional: remove underline */
+}
+
+.content a:hover {
+  text-decoration: underline; /* Optional: underline on hover */
+}
