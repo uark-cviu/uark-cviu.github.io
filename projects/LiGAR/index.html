@@ -189,8 +189,25 @@
 </section> -->
 <!-- End teaser video -->
 
-<!-- Highlights -->
+<!-- Paper abstract -->
 <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Group Activity Recognition (GAR) remains challenging in computer vision due to the complex nature of multi-agent interactions. This paper introduces LiGAR, a LIDAR-Guided Hierarchical Transformer for Multi-Modal Group Activity Recognition. LiGAR leverages LiDAR data as a structural backbone to guide the processing of visual and textual information, enabling robust handling of occlusions and complex spatial arrangements. Our framework incorporates a Multi-Scale LIDAR Transformer, Cross-Modal Guided Attention, and an Adaptive Fusion Module to integrate multi-modal data at different semantic levels effectively. LiGAR's hierarchical architecture captures group activities at various granularities, from individual actions to scene-level dynamics. Extensive experiments on the JRDB-PAR, Volleyball, and NBA datasets demonstrate LiGAR's superior performance, achieving state-of-the-art results with improvements of up to 10.6% in F1-score on JRDB-PAR and 5.9% in Mean Per Class Accuracy on the NBA dataset. Notably, LiGAR maintains high performance even when LiDAR data is unavailable during inference, showcasing its adaptability. Our ablation studies highlight the significant contributions of each component and the effectiveness of our multi-modal, multi-scale approach in advancing the field of group activity recognition.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Highlights -->
+<section class="section hero is-light has-background-white">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -210,26 +227,47 @@
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
-<!-- Paper abstract -->
-<section class="section hero is-light has-background-white">
+<!-- End highlights -->
+
+
+<!-- Motivation -->
+<section class="section hero is-small" id="motivation-figure">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Group Activity Recognition (GAR) remains challenging in computer vision due to the complex nature of multi-agent interactions. This paper introduces LiGAR, a LIDAR-Guided Hierarchical Transformer for Multi-Modal Group Activity Recognition. LiGAR leverages LiDAR data as a structural backbone to guide the processing of visual and textual information, enabling robust handling of occlusions and complex spatial arrangements. Our framework incorporates a Multi-Scale LIDAR Transformer, Cross-Modal Guided Attention, and an Adaptive Fusion Module to integrate multi-modal data at different semantic levels effectively. LiGAR's hierarchical architecture captures group activities at various granularities, from individual actions to scene-level dynamics. Extensive experiments on the JRDB-PAR, Volleyball, and NBA datasets demonstrate LiGAR's superior performance, achieving state-of-the-art results with improvements of up to 10.6% in F1-score on JRDB-PAR and 5.9% in Mean Per Class Accuracy on the NBA dataset. Notably, LiGAR maintains high performance even when LiDAR data is unavailable during inference, showcasing its adaptability. Our ablation studies highlight the significant contributions of each component and the effectiveness of our multi-modal, multi-scale approach in advancing the field of group activity recognition.
-          </p>
+    <div class="columns is-centered">
+      <div class="column is-one">
+        <h2 class="title is-3 has-text-centered">Motivation</h2>
+        <div class="columns is-centered image-container">
+          <div class="column is-half">
+            <img src="static/images/ligar_motivation.png" alt="motivation-figure" class="small-zoom-img">
+            <div class="image-caption">Comparison of LiGAR with conventional GAR methods</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End of motivation figure -->
+
+<!-- Framework -->
+<section class="section hero is-small has-background-white" id="framework-figure">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-one">
+        <h2 class="title is-3 has-text-centered">Proposed Framework</h2>
+        <div class="columns is-centered image-container">
+          <div class="column is-half">
+            <img src="static/images/ligar_framework.png" alt="framework-figure" class="small-zoom-img">
+            <div class="image-caption">Overview of the LiDAR-Guided Hierarchical Transformer (LiGAR) framework.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of framework figure -->
 
 <!-- Statistics -->
-<section class="section hero is-small" id="stats">
+<!-- <section class="section hero is-small" id="stats">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-one">
@@ -259,28 +297,28 @@
         </div>
         <div class="columns is-centered image-container">
           <div class="column is-one-third">
-            <!-- <div class="image-container"> -->
+            <div class="image-container">
               <img src="static/images/stats/engagement_metrics.png" alt="Description 1" class="zoom-img">
-            <!-- </div> -->
+            </div>
             <div class="image-caption">User engagement statistics for each tobacco product on PHAD dataset</div>
           </div>
           <div class="column is-one-third">
-            <!-- <div class="image-container"> -->
+            <div class="image-container">
               <img src="static/images/stats/wordcloud.png" alt="Description 2" class="zoom-img">
-            <!-- </div> -->
+            </div>
             <div class="image-caption">Search keywords word cloud on PHAD dataset</div>
           </div>
         </div>
         <div class="columns is-centered image-container">
           <div class="column is-full">
             <img src="static/images/stats/comparison.png" alt="Description 3" class="no-zoom-img">
-            <!-- <div class="image-caption">Additional statistics for PHAD dataset</div> -->
+            <div class="image-caption">Additional statistics for PHAD dataset</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- End of Statistics -->
@@ -413,7 +451,7 @@
 </section> -->
 
 
-<!-- Experimental results -->
+
 <!-- Experimental Results -->
 <section class="section hero is-small" id="experimental-results">
   <div class="container is-max-desktop">
@@ -422,23 +460,63 @@
         <h2 class="title is-3 has-text-centered">Experimental Results</h2>
         <div class="columns is-centered image-container">
           <div class="column is-half">
-            <img src="static/images/results/overall_performance.png" alt="Experimental Result 1" class="small-zoom-img">
-            <!-- <div class="image-caption">Experimental Result 1 description</div> -->
+            <img src="static/images/results/jrdb.png" alt="Experimental Result 1" class="small-zoom-img">
+            <div class="image-caption">Comparison with SOTA on JRDB-PAR dataset.</div>
           </div>
         </div>
         <div class="columns is-centered image-container">
           <div class="column is-full">
-            <img src="static/images/results/stage_two_comparison_bold_max.png" alt="Experimental Result 2" class="small-zoom-img">
-            <div class="image-caption">Comparison of different approaches in the second stage of our framework.</div>
+            <img src="static/images/results/volleyball_nba.png" alt="Experimental Result 2" class="small-zoom-img">
+            <div class="image-caption">Comparison with SOTA on Volleyball and NBA datasets. Here, <strong>WS:</strong> Weakly Supervised.</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- End of experimental results -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item"> 
+        <!-- Your image here -->
+        <img src="static/images/results/tsne_ligar.drawio.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <b>t-SNE visualization</b> of video representation on the given datasets learned by <b>different variants of our LiGAR model</b>.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/results/tsne_ligar_supp.drawio.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <b>t-SNE visualization</b> of video representation on the given datasets learned by <b>different combinations of modalities by our LiGAR model</b>.
+        </h2>
+      </div>
+      <!-- <div class="item">
+        Your image here
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      Your image here
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div> -->
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 <!-- References Section -->
-<section class="section hero is-small" id="references">
+<!-- <section class="section hero is-small" id="references">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-one">
@@ -470,10 +548,10 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- Our Related Works Section -->
-<section class="section hero is-small" id="references">
+<section class="section hero is-small has-background-white" id="references">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-one">
@@ -481,19 +559,24 @@
         <div class="content has-text-justified">
           <ol>
             <li data-custom-number="[1]">
-              Naga VS Raviteja Chappa, Charlotte McCormick, Susana Rodriguez Gongora, Page Daniel Dobbs and Khoa Luu. 
-              "<strong> Public Health Advocacy Dataset: A Dataset of Tobacco Usage Videos from Social Media</strong>." 
-              Under review at <i> International Journal of Computer Vision</i>. [<a href="https://doi.org/10.36227/techrxiv.172565540.01845016/v3">paper</a>]
+              Chappa, Naga VS, Pha Nguyen, Alexander H. Nelson, Han-Seok Seo, Xin Li, Page Daniel Dobbs, and Khoa Luu. 
+              "<strong>SPARTAN: Self-supervised spatiotemporal transformers approach to group activity recognition</strong>." 
+              In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 5158-5168. 2023. [<a href="https://openaccess.thecvf.com/content/CVPR2023W/CVSports/html/Chappa_SPARTAN_Self-Supervised_Spatiotemporal_Transformers_Approach_to_Group_Activity_Recognition_CVPRW_2023_paper.html">Paper</a>]
             </li>
             <li data-custom-number="[2]">
-              Naga Venkata Sai Raviteja Chappa, Page Daniel Dobbs, Bhiksha Raj and Khoa Luu. 
-              "<strong>FLAASH: Flow-Attention Adaptive Semantic Hierarchical Fusion for Multi-Modal Tobacco Content Analysis</strong>." 
-              Under review at <i> International Journal of Computer Vision</i>. [<a href="https://arxiv.org/abs/2410.19896">paper</a>]
+              Chappa, Naga VS, Pha Nguyen, Alexander H. Nelson, Han-Seok Seo, Xin Li, Page Daniel Dobbs, and Khoa Luu. 
+              "<strong>SOGAR: Self-supervised spatiotemporal attention-based social group activity recognition</strong>." 
+              Under review. [<a href="https://arxiv.org/abs/2305.06310">Paper</a>]
             </li>
             <li data-custom-number="[3]">
-              Naga VS Raviteja Chappa, Charlotte McCormick, Susana Rodriguez Gongora, Page Daniel Dobbs and Khoa Luu. 
-              "<strong> Advanced Deep Learning Techniques for Tobacco Usage Assessment in TikTok Videos</strong>." 
-              In 2024 IEEE Green Technologies Conference (GreenTech), pp. 162-163. IEEE, 2024. [<a href="https://ieeexplore.ieee.org/iel7/10520247/10520356/10520426.pdf">paper</a>]
+              Chappa, Naga VS Raviteja, Pha Nguyen, Page Daniel Dobbs, and Khoa Luu. 
+              "<strong>REACT: Recognize Every Action Everywhere All At Once</strong>." 
+              Machine Vision and Applications 35, no. 4 (2024): 102. [<a href="https://link.springer.com/article/10.1007/s00138-024-01561-z">Paper</a>]
+            </li>
+            <li data-custom-number="[4]">
+              Chappa, Naga Venkata Sai Raviteja, Pha Nguyen, Thi Hoang Ngan Le, Page Daniel Dobbs, and Khoa Luu. 
+              "<strong>HAtt-Flow: Hierarchical Attention-Flow Mechanism for Group-Activity Scene Graph Generation in Videos</strong>." 
+              Sensors 24, no. 11 (2024): 3372. [<a href="https://www.mdpi.com/1424-8220/24/11/3372">Paper</a>]
             </li>
           </ol>
         </div>
