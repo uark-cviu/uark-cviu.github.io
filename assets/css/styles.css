@@ -10055,7 +10055,9 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 .vc-card img {
     width: 100%;
-    height: auto
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 3 / 4;
 }
 
 .vc-card>a {
