@@ -1,0 +1,116 @@
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  min-width: 600px;
+  padding: 1em 10%;
+}
+
+p {
+	padding-top: .0em;
+	margin-top: 1.0em;
+	padding-bottom: .0em;
+	margin-bottom: 1.0em;
+}
+
+a {
+  color: #c00000;
+  text-decoration: none;
+}
+
+a.not-active {
+  pointer-events: none;
+  cursor: default;
+  color: inherit;
+}
+
+a:hover {
+	color: inherit;
+}
+
+img {
+	max-width: 100%
+}
+
+ul, ol {
+	padding: 0;
+	margin-top: .25em;
+	margin-bottom: .25em;
+	margin-left: 2.0em;
+}
+
+li {
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+
+ul, ol {
+	padding: 0;
+}
+
+body h1, h2, h3, h4, h5, h6{
+	font-weight: 100;
+	margin-bottom: 0;
+}
+
+.title {
+	font-size: 24pt;
+	font-weight: bold;
+}
+
+.section-title{
+	font-size: 16pt;
+	font-weight: bold;
+	/* border-bottom: 1px solid #c0c0c0; */
+	padding-top: .5em;
+	margin-top: .25em;
+	padding-bottom: 0em;
+	margin-bottom: .0em;
+}
+
+.sb-tb{
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 0.5em;
+}
+
+.sb-tb td, th{
+	padding: 5px;
+	border: 1px solid #c0c0c0;
+}
+
+.sb-tb th{
+	font-weight: bold;
+	background: #f0f0f0;
+}
+
+.sb-date{
+	font-size: .85em;
+	font-style: italic;
+	#text-align: right;
+}
+//.sb-date-new{
+//	-webkit-column-width: 10px;
+//	-moz-column-width: 10px;
+//	column-width:10px;
+//}
+
+.sb-lecture{
+	padding-left: 1em;
+}
+
+.sb-annoucement{
+	color: #333;
+	font-size: .65em;
+	font-weight: 100;
+}
+
+.footer{
+  font-size: .75em;
+  font-weight: 100;
+  margin-top: 2em;
+  border-top: 1px solid #c0c0c0;
+  text-align: left;
+}
